@@ -23,11 +23,8 @@
               <%= link_to "ログアウト", destroy_user_session_path, data: { turbo_method: :delete }, class: "nav__btn" %>
               <%= link_to "New Proto", new_prototype_path, class: :nav__btn %>
               <div class="nav__text">
-              <%= link_to "こんにちは、#{current_user.name}さん", user_path(current_user) %>
              </div>
-             <%= link_to "こんにちは、#{current_user.name}さん", user_path(current_user) %>
             </div> 
-            <%= link_to "こんにちは、#{current_user.name}さん", user_path(current_user) %>
           <%# // ログインしているときは上記を表示するようにしましょう %>
           <%else %>
             <div class="nav__right">
@@ -36,11 +33,8 @@
             </div>
           <% end %>
         </div>
-        <%= link_to "こんにちは、#{current_user.name}さん", user_path(current_user) %>
       </div>
-      <%= link_to "こんにちは、#{current_user.name}さん", user_path(current_user) %>
     </header>
-    <%= link_to "こんにちは、#{current_user.name}さん", user_path(current_user) %>
     <%= yield %>
     <footer class="footer">
     </footer>
